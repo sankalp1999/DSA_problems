@@ -1,5 +1,13 @@
 # Notes
-- Try to make a tree and branches
+- Try to make a tree and branches. Then accordingly decide how to write code.
+- Permutation is more about swapping and trying out.
+  1. Choose
+  2. Explore
+  3. Unchoose
+  Permutation problems have two kind of solutions. One is the visited and non-visited in a for loop. I don't understand properly currently. In this approach,
+  we build the list. We do not use any swapping in this approach.
+  
+  The other one is the swapping based solution. Notice that in the swapping based solution, **you modify the given array or string**.
 
 ## Backtracking
 In the backtracking process, notice that in each step, move id a step forward(Subsets) or keep it same(Combination Sum).
@@ -8,3 +16,30 @@ This helps to avoid duplicates according to order e.g (1,3) and (3,1) Check [her
 
 ![images/Subsets.png](images/Subsets.png)
 
+``` 
+//Swapping based permutation solution which is much more intuitive.
+class Solution {
+public:
+    void permuteHelper(vector<vector<int>>& res, vector<int>& nums, int begin)
+    {
+        if(begin >= nums.size())
+        {
+            res.push_back(nums);
+            return;
+        }
+        for(int i = begin; i < nums.size(); i++)
+        {
+            swap(nums[i], nums[begin]);
+            permuteHelper(res,nums,begin+1);
+            swap(nums[i],nums[begin]);
+        }
+    }
+    vector<vector<int>> permute(vector<int>& nums) {
+        
+        vector<vector<int>> res;
+        int begin = 0;
+        permuteHelper(res, nums, begin);
+        return res;
+    }
+};
+```
