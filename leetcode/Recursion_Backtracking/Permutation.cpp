@@ -36,6 +36,9 @@ We get out of the loop.
 Load back to the first dfs call where i = 0 (1)
 Now, we go to next iteration and nums[1] = 2. Same process keeps going on.
 
+
+Time complexity: O( n! ) because we are generating all permutations.
+
 */
 
 
