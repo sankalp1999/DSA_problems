@@ -1,11 +1,6 @@
 # Notes
 - Try to make a tree and branches. Then accordingly decide how to write code.
-- Permutation is more about swapping and trying out.
-  1. Choose
-  2. Explore
-  3. Unchoose
-  Permutation problems have two kind of solutions. One is the visited and non-visited in a for loop. I don't understand properly currently. In this approach,
-  we build the list. We do not use any swapping in this approach.
+
   
   The other one is the swapping based solution. Notice that in the swapping based solution, **you modify the given array or string**.
 
@@ -16,6 +11,17 @@ This helps to avoid duplicates according to order e.g (1,3) and (3,1) Check [her
 
 ![images/Subsets.png](images/Subsets.png)
 
+
+
+## Permutations
+
+Swapping is based on
+
+Basic idea: permutation of A[1..n] equals to
+A[1] + permutation of (A[1..n] - A[1])
+A[2] + permutation of (A[1..n] - A[2])
+...
+A[n] + permutation of (A[1..n] - A[n]).
 ``` 
 //Swapping based permutation solution which is much more intuitive.
 class Solution {
