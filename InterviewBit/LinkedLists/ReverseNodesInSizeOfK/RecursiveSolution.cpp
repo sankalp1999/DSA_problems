@@ -18,6 +18,8 @@ public:
         ListNode* next = NULL;
         ListNode* prev = NULL;
         int count = 0;
+        
+        //Regular Reverse k nodes
         while(current && count < k)
         {
             next = current->next;
@@ -28,8 +30,8 @@ public:
         }
         
         if(next!=NULL)
-            head->next = reverse(next, k, swaps);
-        return prev;
+            head->next = reverse(next, k, swaps); // We pass curr or next (same) since that is our new node.
+        return prev; // new head will be prev/
     }
     
     
