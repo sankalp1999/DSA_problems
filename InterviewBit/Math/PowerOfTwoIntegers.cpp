@@ -61,6 +61,10 @@ a = x ^ y
 log a = y log x (by property of log)
 log a / log x = y
 So, if y is an integer, there exists such a combination where a = x ^ y
+
+We check till sqrt(A) since if x > sqrt(A), x raised to any power will be higher than a.
+
+Time complexity : O(log n)
 */
 
 bool isInt(float x)
@@ -73,7 +77,7 @@ int Solution::isPower(int A) {
     
     int num = A;
     if(A == 1)return 1;
-    for(int i = 2; i <= sqrt(A); i++)
+    for(int i = 2; i <= sqrt(A); i++) // i is the x in the above explanation
     {
         if( isInt(log(A)/log(i)) )
         {
