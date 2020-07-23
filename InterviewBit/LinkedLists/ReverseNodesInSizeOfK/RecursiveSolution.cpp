@@ -34,9 +34,6 @@ public:
         return prev; // new head will be prev/
     }
     
-    
-    
-    
     ListNode* reverseKGroup(ListNode* head, int k) {
         
         int len = 0;
@@ -48,7 +45,5 @@ public:
         }
         int swaps = len/k;
         return reverse(head, k, swaps);
-        
-        
     }
 };
