@@ -1,3 +1,12 @@
+/*
+Main idea is to keep track of tail and previous head.
+Prev variable is the newHead.
+Curr becomes the tail.
+tail->next = prev attaches the list.
+*/
+
+
+
 struct node *reverse (struct node *head, int k)
 { 
     node* curr = head;// Reverse
