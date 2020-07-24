@@ -1,0 +1,5 @@
+- Learn about tries
+- Learn basic dp and see GFG for questions
+- Word Break problem
+- Pair dp
+- Max interval point and interval related questions
