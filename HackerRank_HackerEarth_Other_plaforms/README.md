@@ -1,3 +1,4 @@
+- Check the todo.md
 - Upsolve gcd related question
 - Understand dp matching
 - Understand more about the backtracking problems. Check out the OT session.
