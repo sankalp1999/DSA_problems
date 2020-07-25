@@ -1,38 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/*
-Find the words individually and keep moving.
-Record the minimum level. 
-That is the number of spaces.
-*/
 
 long long int min_num = 10000000;
 
-void decrypt(unordered_set<string>& myset, string& s, int begin, long long int level, string prefix)
+void decrypt(unordered_set<string>& myset, string& s, int begin, long long int level)
 {
+    
     if(begin >= s.size())
     {
         min_num = min(min_num, level - 1);
-        // cout << level << endl;
-       // cout << "CAme" << endl;
+
         return;
     }
     string temp = "";
-    // cout << begin << endl;
     for(int i = begin; i < s.size(); i++)
     {
-        temp += s[i];
-       
+        temp += s[i]; // All Combinations should be forward direction.  No swapping needed as we are not generating permutations.
         
         if(myset.find(temp) != myset.end())
         {
-             string prev = prefix;
-            prefix += temp;
-            decrypt(myset, s, i + 1, level + 1, prefix );
-            prefix = prev;
-        }
-       
+            decrypt(myset, s, i + 1, level + 1 ); // Try all combinations and record the minimum level
+        }  
     }
 }
 
@@ -43,7 +32,7 @@ int main() {
     cin >> t;
     while(t--)
     {
-        // Trie* root = new Trie();
+
         string s;
         cin >> s;
         int n;
@@ -54,13 +43,13 @@ int main() {
             string temp;
             cin >> temp;
             myset.insert(temp);
-            // root->insert(temp);
+
         }
 
         int count = 0;
        long long int level = 0;
         string prefix = "";
-      decrypt(myset , s, 0, level, prefix);
+      decrypt(myset , s, 0, level);
         
        if(min_num != 10000000 )
        {
