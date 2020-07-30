@@ -1,6 +1,10 @@
 /* 
 Any permutation is valid.
 So, just use two pointers and in the end, append the right pointer.
+
+When we encounter I, we should spit out the smallest number available. This way, we will have more numbers available for the future.
+Same goes for encountering D.
+
 */
 
 vector<int> Solution::findPerm(const string A, int B) {
