@@ -1,3 +1,10 @@
+/*
+This was more of a mathematics question. We form two equations and solve using that.
+Be sure to handle int overflows
+*/
+
+
+
 vector<int> Solution::repeatedNumber(const vector<int> &A) {
     
     long long int K, C;
