@@ -37,7 +37,7 @@ public:
             {
                 s.push(temp->right); // Stack last in first out
             }
-            if(temp->left)
+            if(temp->left) // This will come out first LIFO
             {
                 s.push(temp->left);
             }
