@@ -17,7 +17,7 @@ public:
             return "null";
         string left = serialize(root->left);
         string right = serialize(root->right);
-        return to_string(root->val) + "," + left + "," + right ; 
+        return to_string(root->val) + "," + left + "," + right ;  // Preorder avoids NULL in beginning
         
     }
     TreeNode* helper(queue<string>& q)
@@ -32,8 +32,8 @@ public:
     }
     // Decodes your encoded data to tree.
     TreeNode* deserialize(string data) {
-        queue<string> q;
-        string temp = "";
+        queue<string> q; // Queue keeps track of the state
+        string temp = ""; 
         for(char c : data)
         {
             if(c != ',')
