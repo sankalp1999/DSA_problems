@@ -2,14 +2,21 @@
 This repository contains solutions of some of the problems I have solved on different platforms across the Internet.
 A lot of solutions are those which I would like to review or some which are really good problems.
 
-## What CP is all about
-Check out this brilliant [answer](https://qr.ae/TjA0uu) by Manashi Sarkar if you want to know about Competitive Programming
 
 
 ## Top Youtube Channels for Competitive Programming and Coding Interview preparation
 
 I had written this long post somewhere else but this is a better place.
 All the good YouTube channels for Competitive Programming(not coding interview) I know are-
+
+Helpful Websites other 
+1. https://happygirlzt.com/codelist.html
+2. https://kennyzhuang.gitbooks.io/algorithms-collection/content/burst_balloons.html
+3. http://adilet.org/
+4. https://yangshun.github.io/tech-interview-handbook/
+
+https://github.com/jwasham/coding-interview-university
+https://github.com/GrenderG/google-interview-university
 
 
 **CP mostly**
