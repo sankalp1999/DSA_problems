@@ -1,3 +1,8 @@
+/*
+We binary search on all possible answers from [1, max(piles)].
+Notice ceil operation where p + m - 1/ m
+*/
+
 class Solution {
 public:
     
@@ -7,6 +12,7 @@ public:
         
         for(int i = 0; i < piles.size(); i++)
         {
+            /* CEIL (p + m - 1 / m) */ 
             hours_required = hours_required +   (piles[i] + mid - 1) / mid;
         }
     
