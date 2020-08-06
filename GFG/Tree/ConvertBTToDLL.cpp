@@ -5,7 +5,7 @@ We pass a prev variable. Notice that we pass pointer via reference.
 The head of the list will be leftmost node in the tree. This will
 get initialized only when we reach there. Also, we need the previous node 
 for the connection.
-
+*/
 
 
 void inorder1(Node* root, Node*& headList, Node*& prev)
