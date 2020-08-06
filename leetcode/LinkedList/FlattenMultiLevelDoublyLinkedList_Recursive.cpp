@@ -19,16 +19,20 @@ public:
         {
             if(curr->child)
             {
-                Node* temp = curr->next;
-                curr->next = flatten(curr->child);
-                curr->child = NULL;
+                Node* temp = curr->next; // Store the next link in stack
+                
+                curr->next = flatten(curr->child); // This will connect child list
+                
+                curr->child = NULL; // Rectify the connections properly
                 curr->next->prev = curr;
-                while(curr->next)curr = curr->next;
-                curr->next = temp;
-                if(curr->next)
-                curr->next->prev = curr;
+                
+                while(curr->next)curr = curr->next; // Go to the end of this list
+                curr->next = temp; // And make the connection
+                
+                if(curr->next) 
+                curr->next->prev = curr; // Make previous connection
             }
-            curr = curr->next;
+            curr = curr->next; // Continue for next level.
         }
         
         return head;
