@@ -7,6 +7,7 @@ This solution is the O(1) space solution. This is a tricky solution and I did no
 2. Assign the random of previous node to the next node.
    i.e curr->next->random = curr->random->next
 3. Deattach the list.
+*/
 
 class Solution {
 public:
