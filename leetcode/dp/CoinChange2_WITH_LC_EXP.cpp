@@ -1,7 +1,6 @@
 /*
-This is a classic knapsack problem. Honestly, I'm not good at knapsack problem, it's really tough for me.
 
-dp[i][j] : the number of combinations to make up amount j by using the first i types of coins
+dp[i][j] : the number of ways to make up amount j by using the first i types of coins
 State transition:
 
 not using the ith coin, only using the first i-1 coins to make up amount j, then we have dp[i-1][j] ways.
@@ -54,10 +53,13 @@ public:
             {
                 if(j >= coins[i-1])
                 {
-                    dp[i][j] = dp[i-1][j] + dp[i][j - coins[i-1]];
+                    dp[i][j] = dp[i-1][j] + dp[i][j - coins[i-1]]; // Addition of choices i.e dp[i-1][j] stands for not using ith coin and the 
+                                                                   // other one stands for dp[i][j - coins[i-1]] using the ith coin. Its is actually one way 
+                                                                   // from dp[i][j-coins[i-1]]
                 }else
                 {
-                    dp[i][j] = dp[i-1][j];
+                    dp[i][j] = dp[i-1][j];                        // We can't include since coin value is more than amount itself. So, include ways 
+                                                                  // which we can have without including the ith coin.
                 }
             }
         }
