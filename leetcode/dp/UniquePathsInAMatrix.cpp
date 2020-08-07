@@ -28,7 +28,8 @@ public:
        {
            for(int j = 1; j < n; ++j)
            {
-                dp[i][j] = dp[i-1][j] + dp[i][j-1];
+                dp[i][j] = dp[i-1][j] + dp[i][j-1]; // Ways to reach i,j is no. of ways to reach (i-1,j) * 1 + (i,j-1) * 1 since there is
+                                                    // only one way to reach (i,j) from both the positions.
            }
        }
     return dp[m-1][n-1];
