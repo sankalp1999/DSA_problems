@@ -4,6 +4,14 @@
   will match to abb
   ab*
   will match to a also.
+  
+LC explanation
+(p.charAt(j-1) == s.charAt(i-1) || p.charAt(j-1) == '.') if the current characters match or pattern has . then the result is determined by the previous state dp[i][j] = dp[i-1][j-1]. 
+Don't be confused by the charAt(j-1) charAt(i-1) indexes using a -1 offset that is because our dp array is actually one index bigger than our string and pattern lenghts to hold 
+the initial state dp[0][0] 
+if p.charAt(j-1) == '*' then either it acts as an empty set and 
+the result is dp[i][j] = dp[i][j-2] or (s.charAt(i-1) == p.charAt(j-2) || p.charAt(j-2) == '.') 
+current char of string equals the char preceding * in pattern so the result is dp[i-1][j]
 */
 
 
@@ -44,6 +52,9 @@ public:
                     if(j-2>=0 && s[i-1] == p[j-2] || p[j-2] == '.') // Another case is when we want to repeat previous character
                     {                                               // Only possible when preceding element is equal to ith string element
                         dp[i][j] = dp[i][j] | dp[i-1][j];   // Take the above state's value since we will match that. (Not clear)
+                    // We are repeating the previous character. So, if pattern matches till there, we can match till now since * can repeat. Otherwise false
+                     // dp[i-1][j] will be false if sequence does not match till then.
+                    
                     }
                 }
                 else
