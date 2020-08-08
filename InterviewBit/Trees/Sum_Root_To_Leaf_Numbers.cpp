@@ -3,8 +3,8 @@
  Think recursion.
 Carrying along the number formed from root to the node 
 when calling the function for node, will make stuff easier for you. 
-When you encounter a new digit,  you can append it to existing one 
-as newNum = oldNum * 10 + newDigit.
+When you encounter a new digit,  you can append it to existing one  
+as newNum = oldNum * 10 + newDigit. (It is not normal sum but concatenation of digits)
 
 Also, use a temp variable to store the state of the number 
 before the recursive calls. I got this idea from the solution discussion.
