@@ -1,3 +1,7 @@
+/*
+Including snakes in the answer is also necessary since some shortest path might involve snake also. You never know.
+I created a map for snakes and ladders and then assign the position manually.
+*/
 #include <bits/stdc++.h>
 
 using namespace std;
