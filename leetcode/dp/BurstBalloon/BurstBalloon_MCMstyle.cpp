@@ -1,31 +1,36 @@
 class Solution {
 public:
     
-    int solve(int i, int j, vector<int>& nums, vector<vector<int>>& dp)
+    
+    int helper(vector<int>& nums, int left, int right, vector<vector<int>>& dp)
     {
-        if(i + 1 == j)return 0;
-        
-        if(dp[i][j] != -1)return dp[i][j];
-        
-        int cost = 0;
-        for(int k = i+1; k < j; k++)
+        if(left > right)
+            return 0;
+        if(left + 1 == right)
         {
-            cost = max(cost, solve(i,k,nums, dp) + solve(k,j, nums, dp) + nums[i]*nums[k]*nums[j]) ;
+            return 0;
         }
-        return dp[i][j] = cost;
+        
+        if(dp[left][right] != -1)
+            return dp[left][right];
+        
+        int ans = 0;
+        for(int k = left + 1; k < right; k++)
+        {
+            ans = max(ans, helper(nums,left,k,dp) + helper(nums,k, right,dp) + nums[left] * nums[k] * nums[right]);
+        }
+        
+        return dp[left][right] = ans;
+        
     }
+    
     
     
     int maxCoins(vector<int>& nums) {
         
-        int i, j;
-        nums.insert(nums.begin(), 1);
-        nums.push_back(1);
-        i = 0;
-        j = nums.size()-1 ;
-        vector<vector<int>> dp(501, vector<int>(501, -1));
-        return solve(i, j, nums, dp);
-    
-        
+       nums.insert(nums.begin(),1);
+       nums.push_back(1);
+       vector<vector<int>> dp(nums.size() + 1, vector<int>(nums.size() + 1, -1));
+       return helper(nums,0,nums.size() - 1,dp);
     }
 };
