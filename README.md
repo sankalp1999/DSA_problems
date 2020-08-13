@@ -11,9 +11,12 @@ A lot of solutions are those which I would like to review or some which are real
 
 ## Online Tests for internship (Not placement)
 7th August
+I will add CF problems - more implementation and greedy problems.
+
 I have solved a lot of questions on LC/IB and have missed two OTs by offbyone errors/changing approach and MSFT by not reading constrains properly and panicking.
 
 - Sleep well.
+- Don't hurry or rush through problems. Think hard.
 - Very uncertain. Could be very standard questions or could be weird questions not remotely similar to LC/IB
 - Sometimes, they may be simple implementation/ thinking problem. 
 - Luck plays a huge factor. Someone getting through might not be very superior to you.
