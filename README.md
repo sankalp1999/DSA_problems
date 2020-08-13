@@ -4,10 +4,12 @@ A lot of solutions are those which I would like to review or some which are real
 
 
 
-## Top Youtube Channels for Competitive Programming and Coding Interview preparation
+## Resources
 
 I had written this long post somewhere else but this is a better place.
 All the good YouTube channels for Competitive Programming(not coding interview) I know are-
+
+[Youtube Channels for CP and CI](YoutubeChannels.md)
 
 Helpful Websites other 
 1. https://happygirlzt.com/codelist.html
