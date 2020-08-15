@@ -3,6 +3,8 @@ This repository contains solutions of some of the problems I have solved on diff
 A lot of solutions are those which I would like to review or some which are really good problems.
 
 
+https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
+
 ## Reflection
 - Think of some simple logic initially and not apply any algo design technique directly.
 - Don't assume difficulty of question initially. If scores are there, then thats good to estimate.
@@ -41,6 +43,8 @@ All the good YouTube channels for Competitive Programming(not coding interview) 
 [Youtube Channels for CP and CI](YoutubeChannels.md)
 
 Helpful Websites other 
+
+
 1. https://happygirlzt.com/codelist.html
 2. https://kennyzhuang.gitbooks.io/algorithms-collection/content/burst_balloons.html
 3. http://adilet.org/
