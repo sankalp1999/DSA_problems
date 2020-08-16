@@ -12,10 +12,6 @@ the previous state and try other combinations.
 
 */
 
-
-
-
-
 bool isValid(int i, int j, char check, vector<vector<char>>& A)
 {
     int v_offset = i/3; 
