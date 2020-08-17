@@ -6,13 +6,14 @@ A lot of solutions are those which I would like to review or some which are real
 https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
 
 ## Reflection
+Emphasis should be on the thinking process.
 - Think of some simple logic initially and not apply any algo design technique directly.
 - Don't assume difficulty of question initially. If scores are there, then thats good to estimate.
 - Focus on thinking for more time.
 
 
 ## Online Tests for internship (Not placement)
-This is all luck or I am dumb or maybe just others are better than me who cleared. Anyways, i will keep doing problems as i enjoy solving even though i suck at it.
+This is all luck or I am dumb or maybe just others are better than me(pressure handling, thinking, previous efforts, smartness) who cleared. Anyways, i will keep doing problems as i enjoy solving even though i suck at it.
 
 ## Mistakes
 - Many a times problems have simple solution which does not involve DP, recursion etc. Implementation adn greedy are the way to go for this practice.
