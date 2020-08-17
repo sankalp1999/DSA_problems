@@ -12,18 +12,7 @@ https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patte
 
 
 ## Online Tests for internship (Not placement)
-7th August
-I will add CF problems - more implementation and greedy problems.
-
-I have solved a lot of questions on LC/IB and have missed two OTs by offbyone errors/changing approach and MSFT by not reading constrains properly and panicking.
-
-- Sleep well.
-- Don't hurry or rush through problems. Think hard.
-- Very uncertain. Could be very standard questions or could be weird questions not remotely similar to LC/IB
-- Sometimes, they may be simple implementation/ thinking problem. 
-- Luck plays a huge factor. Someone getting through might not be very superior to you.
-- Competitive programming helps more in clearing OT. recommended to do some sort of problem solving questions before interview prep. Linkedlist, trees 
-  mostly will not appear in online assessment
+This is all luck or I am dumb or maybe just others are better than me who cleared. Anyways, i will keep doing problems as i enjoy solving even though i suck at it.
 
 ## Mistakes
 - Many a times problems have simple solution which does not involve DP, recursion etc. Implementation adn greedy are the way to go for this practice.
@@ -32,7 +21,6 @@ I have solved a lot of questions on LC/IB and have missed two OTs by offbyone er
 - Changing approach fast when some more checking can help get AC
 - Do not get disheartened by failures/not being able to solve. No need to rant. Analyse your mistakes and move forward
 - Don't run away from stuff you don't like/ basic difficult stuff. You will have to cover them sometime. 
-
 
 
 ## Resources
