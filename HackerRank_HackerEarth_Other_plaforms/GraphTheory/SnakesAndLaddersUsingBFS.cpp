@@ -59,6 +59,9 @@ int quickestWayUp(vector<vector<int>> ladders, vector<vector<int>> snakes) {
 
 }
 
+/*
+Hackerrank Boilerplate below this point
+*/
 int main()
 {
     ofstream fout(getenv("OUTPUT_PATH"));
