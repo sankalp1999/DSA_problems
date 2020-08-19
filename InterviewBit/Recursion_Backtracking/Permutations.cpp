@@ -15,7 +15,7 @@ void permuter(vector<vector<int>>& res, vector<int>& A, int begin)
     
     for(int i = begin; i < A.size(); i++)
     {
-        swap(A[i], A[begin]); Recursively, permute remaining A - 1, A- 2 etc....
+        swap(A[i], A[begin]); //Recursively, permute remaining A - 1, A- 2 etc....
         permuter(res, A, begin + 1); 
         swap(A[i], A[begin]); // Reset for next permutation call
     }
