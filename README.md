@@ -34,6 +34,8 @@ All the good YouTube channels for Competitive Programming(not coding interview) 
 
 Helpful Websites other 
 
+[Good video](https://www.youtube.com/watch?v=0SZworb_Fo4)
+[I had written this for a friend]([https://docs.google.com/document/d/1Cl0PZh6MQcb9XgcmiBkUXcoY7ahi7hO5sSRqwfU16Mc/edit#)
 
 1. https://happygirlzt.com/codelist.html
 2. https://kennyzhuang.gitbooks.io/algorithms-collection/content/burst_balloons.html
