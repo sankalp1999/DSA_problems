@@ -12,7 +12,7 @@ Emphasis should be on the thinking process.
 - Focus on thinking for more time. Try to code after you are clear with the algorithm/logic. Try getting ACs in min. attempts during practice 
   Debug it if you think it's correct or if it is passing some later
 test cases. Don't change approach abruptly.
-- Think of some simple logic initially and not apply any algo design technique directly.
+- Think of some simple logic i.e from scratch initially and not apply any algo design technique directly. When you think from scratch, your previous experience might also help in solving. Later, you can apply other logic and patterns after sometime if implementation does not work. Basically, narrowing down after sometime.
 - Don't assume difficulty of question initially. If scores are there, then thats good to estimate.
 - Deep breaths or small breaks (1 - 2 minutes) can help.
 
@@ -20,8 +20,10 @@ test cases. Don't change approach abruptly.
 ## Online Tests for internship (Not placement)
 This is all luck or I am dumb or maybe just others are better than me(pressure handling, thinking, previous efforts, smartness) who cleared. Anyways, i will keep doing problems as I enjoy solving.
 
+Anyways, Competitive programming helps here. People recommend solving CF problems.
+
 ## Mistakes
-- Many a times problems have simple solution which does not involve DP, recursion etc. Implementation adn greedy are the way to go for this practice.
+- Many a times problems have simple solution which does not involve DP, recursion etc. Implementation and greedy are the way to go for this practice.
 - Not reading full question or constraints
 - Panicking
 - Changing approach fast when some more checking can help get AC. This is basically hurrying. Try to stick longer and work out on paper.
