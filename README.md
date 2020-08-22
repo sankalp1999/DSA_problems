@@ -9,9 +9,12 @@ Things to check out/in progress
 
 ## Reflection
 Emphasis should be on the thinking process.
+- Focus on thinking for more time. Try to code after you are clear with the algorithm/logic. Try getting ACs in min. attempts during practice 
+  Debug it if you think it's correct or if it is passing some later
+test cases. Don't change approach abruptly.
 - Think of some simple logic initially and not apply any algo design technique directly.
 - Don't assume difficulty of question initially. If scores are there, then thats good to estimate.
-- Focus on thinking for more time.
+- Deep breaths or small breaks (1 - 2 minutes) can help.
 
 
 ## Online Tests for internship (Not placement)
