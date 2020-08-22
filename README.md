@@ -35,7 +35,7 @@ All the good YouTube channels for Competitive Programming(not coding interview) 
 
 
 ## A small post/article
-[A comprehensive post I had written this for a friend](https://docs.google.com/document/d/1Cl0PZh6MQcb9XgcmiBkUXcoY7ahi7hO5sSRqwfU16Mc/edit#)
+[Meta Coding Interview Style Problem Guide](https://docs.google.com/document/d/1Cl0PZh6MQcb9XgcmiBkUXcoY7ahi7hO5sSRqwfU16Mc/edit#) - I had written this for a friend. Might help you also.
 
 Helpful Websites other 
 1. https://happygirlzt.com/codelist.html
