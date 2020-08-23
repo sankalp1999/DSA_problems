@@ -22,3 +22,24 @@ int evalTree(node* root) {
     if(right == 0)return stoi(root->data);
     
 }
+
+
+/*
+Using base case as that of leaf node
+*/
+int evalTree(node* root) {
+    if(!root->left && !root->right)
+    {
+        return stoi(root->data);
+    }
+    int left = evalTree(root->left);
+    int right = evalTree(root->right);
+    
+    if(root->data == "+" || root->data == "-" || root->data == "*" || root->data == "/")
+    {
+        if(root->data == "+")return left + right;
+        else if(root->data == "-")return left - right;
+        else if(root->data == "*")return left * right;
+        else if(root->data == "/")return left / right;
+    }
+}
