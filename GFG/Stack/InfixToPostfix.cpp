@@ -30,11 +30,11 @@ int main() {
 	        {
 	            res += c;
 	        }
-	        else if(c == '(')
+	        else if(c == '(') // If left parenthesis, then just push.
 	        {
 	            mystack.push(c);
 	        }
-	        else if(c == ')')
+	        else if(c == ')') // We need to pop out everything till we reach the '('
 	        {
 	            while(!mystack.empty() && mystack.top() != '(')
 	            {
@@ -45,8 +45,10 @@ int main() {
 	            mystack.pop(); // Removign the open parenthesis
 	        }
 	        else // Operator has been scanned.
-	        {
-	            while(!mystack.empty() && ( prec(c) <= prec( mystack.top() ) ))
+	        {	
+			
+	            // If anything there in the stack having a higher precedence, we need to pop it out since we have reached it's boundary of influence.		
+	            while(!mystack.empty() && ( prec(c) <= prec( mystack.top() ) )) // Better version is mystack.top() > c
 	            {
 	                res.push_back(mystack.top());
 	                mystack.pop();
