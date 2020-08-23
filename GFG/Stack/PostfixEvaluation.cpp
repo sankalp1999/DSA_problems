@@ -1,7 +1,7 @@
 /*
 If number, push in stack.
 If operator encountered, then pop out the operands i.e 2 elements
-<Operand 1> Operand <Operand 2>
+<Operand 2> <Operand 1> < Operator >
 That is why we use a stack so that we can get the last going in element first.
 */
 
