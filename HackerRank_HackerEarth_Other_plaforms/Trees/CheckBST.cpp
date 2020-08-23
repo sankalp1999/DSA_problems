@@ -19,8 +19,8 @@ duplication
 
       return left && right;   
   }
-	bool checkBST(Node* root) {
-        int min_val = -1e5;
-        int max_val = 1e5;
-		return helper(root, min_val, max_val);
-	}
+bool checkBST(Node* root) {
+int min_val = -1e5;
+int max_val = 1e5;
+	return helper(root, min_val, max_val);
+}
