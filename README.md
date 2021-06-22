@@ -7,6 +7,15 @@ A lot of solutions here are those which I would like to review or some which are
 Things to check out/in progress
 - https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
 
+
+### Points to keep in mind always
+- Constantly, push throughout your comfort zone. It's recursive.
+- Read the problem statement and constraints carefully. 
+- Don't panic, giveup, rush.
+- Work on a paper. Thinking is better on paper.
+- No need to stress. Play.
+
+
 ## Reflection
 Emphasis should be on the thinking process.
 - Focus on thinking for more time. Try to code after you are clear with the algorithm/logic. Try getting ACs in min. attempts during practice 
