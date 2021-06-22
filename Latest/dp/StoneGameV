@@ -1,0 +1,51 @@
+class Solution {
+public:
+    
+    int solve(vector<int>& stoneValue, int left, int right, vector<vector<int>>& dp)
+    {   
+        
+        if(left >= right)
+        {
+            return 0;
+        }
+        if(dp[left][right]!=-1)
+        {
+            return dp[left][right];
+        }
+        int res = 0;
+        int sum = 0;
+        int tot = 0;
+        for(int i = left; i <= right; i++)
+        {
+            tot += stoneValue[i];
+        }
+        
+        // Main thing is that the splits are based on the sum.
+        // Since left, right and the returned value are changing, we need to memoize them.
+        for(int i = left ; i < right; i++)
+        {
+            sum += stoneValue[i];
+            if(sum <= tot - sum)
+            {
+                res = max(res, solve(stoneValue,left, i, dp) + sum) ;
+            }
+            if(sum >= tot - sum )
+            {
+                res = max(res, solve(stoneValue, i + 1, right,dp) + tot - sum) ;
+            }
+        }
+        return dp[left][right] = res;
+    }
+    
+    
+    int stoneGameV(vector<int>& stoneValue) {
+        
+        int left = 0;
+        int right = stoneValue.size() - 1;
+        int n = stoneValue.size();
+        vector<vector<int>> dp(n + 1, vector<int>(n + 1, -1));
+        return solve(stoneValue, left, right, dp);
+    }
+};
+// Split and check at each position
+// Need a left and a right
