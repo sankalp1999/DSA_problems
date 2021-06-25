@@ -1,5 +1,5 @@
 // Time complexity : O(n * log ( n )) Sorting 
-// Possible to do in O(n) by finding the median using partitioning.
+// Possible to do in O(n) by finding the median using partitioning but worst case time complexity for median is O(N * N). Median of median is too tedious.
 class Solution {
 public:
     int minMoves2(vector<int>& nums) {
