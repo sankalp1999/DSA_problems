@@ -1,5 +1,5 @@
 
-/*
+/* 1st attempt 
 The main idea is that if check for both 1 greater and 1 lesser element,
 then we are double contributing. ( I was doing this earlier)
 
@@ -14,36 +14,33 @@ sequence is not present, as that number would necessarily be part of a longer se
 3. Another detail is that while traversing if there is a smaller element, then we skip that and continue because
    we will have it in our streak or sequence later on when we search from a smaller element.
 4. If still not understood, check this awesome video     // https://www.youtube.com/watch?v=xdMyL--dOqE
+*/
 
 
+/* 2nd attempt */
 class Solution {
 public:
-
     int longestConsecutive(vector<int>& nums) {
-        
+        if(nums.empty())return 0;
+        int count;
+        int max_count = 1;
         unordered_set<int> s;
-        if(nums.size() < 1)return 0;
+        for(int i : nums)s.insert(i);
+        nums.resize(s.size());
+        for(auto it : s)
+            nums.push_back(it);
         for(int i = 0; i < nums.size(); i++)
         {
-            s.insert(nums[i]);
-        }
-        int res = 1;
-        int count = 1;
-        for(auto it = s.begin(); it != s.end(); it++)
-        {
-            int curr = *it;
-            if(s.find(curr-1) != s.end()) // If smaller element available in the hashset, then move on.
-            {
-                continue;
-            }
-            int count = 1;
-            while(s.find(curr + 1) != s.end()) // Keep checking
+            int num = nums[i];
+            count = 1;
+            if(s.find(num-1)!=s.end())continue;
+            while(s.find(num+1) != s.end())
             {
                 count++;
-                curr++;
+                num = num + 1;
+                max_count = max(max_count, count);
             }
-            res = max(res, count);
         }
-        return res ;
+        return max_count;
     }
 };
