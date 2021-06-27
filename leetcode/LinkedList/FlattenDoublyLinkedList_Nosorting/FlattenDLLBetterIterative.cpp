@@ -8,38 +8,40 @@ public:
     Node* child;
 };
 */
+
 class Solution {
 public:
-    Node* flatten(Node* root) {
-          if(root == NULL)
-        return NULL;
+    Node* flatten(Node* head) {
         
-    Node* curr = root;
-    stack<Node*> s;
-    // We only push inside the stack if it has a child, otherwise no need.
-    while(curr)
-    {
-        if(curr->child != NULL)
+        Node* curr = head;
+        
+        stack<Node*> s;
+        while(curr)
         {
-            if(curr->next != NULL)
+            if(curr->child)
             {
+                
+                if(curr->next)
                 s.push(curr->next);
+                curr->next = curr->child; 
+                curr->next->prev = curr; // Connect to prev pointer.
+                curr->child = NULL;
             }
-            curr->next = curr-> child;
-            curr->next->prev = curr;
-            curr->child = NULL;
+            if(curr->next == NULL)
+            {   
+                if(s.empty())break;
+                
+                Node* temp_next = s.top();
+                s.pop();
+                curr->next = temp_next;
+                if(curr->next)
+                {
+                    curr->next->prev = curr; // Connect the prev of the stack wala next to current list.
+                }
+            }
             
+            curr = curr->next;
         }
-        else if(curr->next == NULL && !s.empty()) // No need of prev pointer
-        {
-            Node* rest = s.top();
-            s.pop();
-            curr->next = rest; // If curr->next is empty, time to make connection
-            curr->next->prev = curr;
-        }
-        curr = curr->next;
-    }
-    return root;
-        
+        return head;
     }
 };
