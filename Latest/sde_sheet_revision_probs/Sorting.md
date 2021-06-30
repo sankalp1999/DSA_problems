@@ -1,5 +1,6 @@
 **Quick sort**
 ```
+Lomuto partition scheme
 int partition(vector<int>& nums, int l, int r) 
 {
     int p = random() % (r - l + 1);
