@@ -1,5 +1,5 @@
 **Quick sort**
-```
+'''
 Lomuto partition scheme
 int partition(vector<int>& nums, int l, int r) 
 {
@@ -26,4 +26,21 @@ void quick(vector<int>& nums, int low, int high)
 		quick(nums, p + 1, high);
 	}
 }
+'''
+Hoare partition does not work in kth largest element. Prrobably some infinite recursion happens sometimes.
 ```
+  int HoarePartition(vector<int>& nums, int l, int r)
+    {
+        int pivot = l;
+        int i = l;
+        int j = r;
+        while(i<j)
+        {
+            while(nums[i] <= nums[pivot] )i++;
+            while(nums[j] > nums[pivot] )j--;
+            if(i < j)swap(nums[i], nums[j]);
+        }
+        swap(nums[j],nums[pivot]);
+        return j;
+    }
+ ```
