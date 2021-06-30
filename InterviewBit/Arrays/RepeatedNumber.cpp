@@ -6,23 +6,23 @@ Now, when they intersect, we set one of them to the head again. Now, we let them
 at the same speed (tortoise speed). The next time they will intersect, that is going 
 to be the duplicate
 */
-int Solution::repeatedNumber(const vector<int> &nums) {
-   
-    int slow = nums[0];
-    int fast = nums[0];
-    while(1)
-    {
-        slow = nums[slow];
-        fast = nums[nums[fast]];
-        if(fast == slow)break;
+    int findDuplicate(vector<int>& nums) {
+        
+        int slow = nums[0];
+        int fast = nums[0];
+        do
+        {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        }while(slow!=fast);
+        
+        slow = nums[0];
+        while(slow!=fast)
+        {
+            slow = nums[slow];
+            fast = nums[fast];
+        }
+        return slow;
     }
-    slow = nums[0];
-    while(slow!= fast)
-    {
-        slow = nums[slow];
-        fast = nums[fast];
-        if(slow == fast)return fast;
-    }
-    if(slow == fast)return fast;
-    return -1;
-}
+};
+
