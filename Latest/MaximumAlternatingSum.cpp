@@ -2,7 +2,24 @@
 // parity and therefore, it determines whether the number will get added or subtracted.
 // After that, the problem is just picking or not picking.
 // Also, after that, storing [idx][parity] is enough.
+  
 
+// Bottom up solution derived after doing the top down solution.
+    long long maxAlternatingSum(vector<int>& nums) {
+        int num = 0;
+        memset(dp,0,sizeof dp);
+        for(int i = 1; i <= nums.size(); i++)
+        {
+            // either i will include or not 
+            // also depends on parity
+            for(int j = 0; j < 2; j++)
+            {   
+                int add = (j % 2) ? -nums[i-1] :nums[i-1];
+                dp[i][j] = max(dp[i-1][j], dp[i-1][1-j] + (long long)add);
+                // cout << dp[i][j] << " ";
+            }
+        }
+        return max(dp[nums.size()][0], dp[nums.size()][1]);
 
 class Solution {
 public:
