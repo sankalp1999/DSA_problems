@@ -29,12 +29,18 @@ public:
                 adj[j].push_back({i,w});
             }
         }
-        vector<int> parent(n);
-        vector<int> key(n,1e8);
-        vector<bool> mstSet(n, false);
+        vector<int> parent(n); // Parent pointer array. src or 0 node obviously -1 since no parent.
+        
+        vector<int> key(n,1e8); // Maintain an invariant that the priority queue only gets the minimum weighted edge that 
+                                // is coming to a node. S.key = phi for arbitrary start
+        vector<bool> mstSet(n, false); // Included in the mst or not. Can be treated as visited array.
+        
         priority_queue< array<int,2>, vector<array<int,2>>, greater<array<int,2>> > pq ;
+        
         key[0] = 0;
+        
         parent[0] = -1;
+        
         pq.push({0,0}); // To find the minimal key or the node that provides 
                         // the minimum weight edge.
         int cost = 0;
@@ -43,12 +49,13 @@ public:
             auto [w, u] = pq.top();
             pq.pop();
             
-            mstSet[u] = true;
+            mstSet[u] = true; // Has been included in the mst
             for(auto it : adj[u])
             {
                 int v = it.first;
                 int weight = it.second;
-                if(mstSet[v] == false and weight < key[v])
+                if(mstSet[v] == false and weight < key[v]) // maintain the invariant so that greater weight
+                                                           // edges don't get in the pq.
                 {
                     parent[v] = u;
                     key[v]= weight;
