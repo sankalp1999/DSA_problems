@@ -1,7 +1,10 @@
 // Intelligent subsequence building --> leetcode editorial
 // Patience sort. We form a subsequence. Whenever, we encounter a larger number, we add it to 
-// our sequence. But if we encounter or smaller or equal number, then we replace the first larger/equal
-// number with this number since it gives more options and it's valid subsequence since we are travelling
+// our sequence. 
+
+// But if we encounter or smaller or equal number, then we replace the first larger/equal
+// number with this number since it gives more options while still keeping length same.
+// and it's valid subsequence since we are travelling
 // towards right direction all the time so things are in order.
 
 
