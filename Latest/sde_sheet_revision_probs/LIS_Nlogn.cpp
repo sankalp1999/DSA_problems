@@ -17,12 +17,18 @@ public:
                 res.push_back(nums[i]);
             }
             else
-            {
+            {   
+                // Greater than or equal to is important because otherwise
+                // we are going to replace the next larger element and things will be wrong.
+                // 4 5 4 10
+                // Counter case for just greater than.
+                // Soln : 
+                // 4 then. 4 5, then 4 4, then 4 4 10. This is wrong. 
                 int index = lower_bound(res.begin(), res.end(), nums[i]) - res.begin();
                 res[index]=nums[i];
                 // for(int j = 0; j < res.size(); j++)
                 // {
-                //     if(res[j] >= nums[i])
+                //     if(res[j] >= nums[i]) 
                 //     {
                 //         res[j] = nums[i]; // wider options
                 //         break;
