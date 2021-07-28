@@ -43,6 +43,7 @@ public:
         
         visited[r][c] = 1; 
         int num = 0;
+        // This can be made into a separate function
         for(int i = 0; i < 8; i++)
         {
             int x1 = r + dx[i];
