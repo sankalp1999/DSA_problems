@@ -1,5 +1,29 @@
 
 
+Kosaraju
+1. Do a dfs and store nodes in a stack
+2. Take transpose of graph (and reset visited)
+for(auto it : adj[node])
+{
+	transpose[it].push_back(node);
+}
+3. Do a dfs on nodes popped by stack to count components.
+
+Intuition:
+Suppose we have a -> b <- c --> d as SCC
+Here, a can go to b and c can go to b. So our normal method to find components will fail since 
+we go from a to b and c to b.
+
+In our stack
+
+a will be above b.
+c will also be above b because their dfs will finish later(stack stores time of finishing dfs)
+
+a <- b -> c <- d
+So when we follow order of stack, a will visit only a in transpoe.
+c will visited only c. Then b can't visit both of them since already visited.
+
+
 Bridges
 ```
 
