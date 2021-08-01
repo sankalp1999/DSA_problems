@@ -1,4 +1,12 @@
+Tarjan
+Code is very similar to bridges.cpp
+Idea is that we only update low[src] = min(low[src], low[child]) (after completing dfs of unvisited node)
+and low[src] = min(low[src], disc[child]) (already visited)
+**if the child is on stack i.e current dfs call.**
+So we mark a node as onStack[src] = true and add it to stack.
 
+When dfs completed of a node, we check if low[node] = disc[node], then we are exiting 
+the scc. Pop till we find that node. All the popped out nodes are part of this one SCC.
 
 Kosaraju
 1. Do a dfs and store nodes in a stack
