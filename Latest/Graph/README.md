@@ -38,4 +38,41 @@ void dfs(int src, int par, vector<vector<int>>& adj, vector<int>& visited, vecto
         }
     }
     
-    ```
+  ```
+  
+  Articulation Point
+  ```
+  void dfs(int node, int parent, vector<int> &vis, vector<int> &tin, vector<int> &low, int &timer, vector<int> adj[], vector<int> &isArticulation) {
+    vis[node] = 1; 
+    tin[node] = low[node] = timer++;
+    int children = 0; 
+    for(auto child: adj[node]) {
+        // Parent is which called
+		// node is curretnly being visited
+		// child is the neighbours of node
+		if(child == parent) continue;
+        
+        if(!vis[child]) {
+            dfs(child, node, vis, tin, low, timer, adj, isArticulation); 
+            // Did you see a backedge to my ancestor?
+			// If yes, then you are connected and safe without me
+			low[node] = min(low[node], low[child]); 
+	        
+			children++;  // root children
+
+            if(low[child] >= tin[node] && parent != -1) {
+                isArticulation[node] = 1; 
+            }
+        } else {
+            low[node] = min(low[node], tin[child]); 
+        }
+    }
+    
+    if(parent == -1 && children > 1) {
+        isArticulation[node] = 1; 
+    }
+}
+```    
+    
+    
+    
