@@ -1,18 +1,26 @@
-# Problem-solving
+# Problem-solving()
 This repository contains solutions of some of the problems I have solved on different platforms across the Internet.
+
+- SDE sheet solutions = Latest -> sde_sheet_revision_probs
+- Graph algorithms = Latest -> Graph
+- DisjointSet = Latest -> CF or DisjointSet folder
+- All problems in Problem_Tree.txt
+
+
 Check out my [Approach to CP in a nutshell](https://github.com/sankalp1999/3rdSem-Data-Structures-Lab#some-thoughts---cp-related) if you have interest in Competitive programming.
 
-A lot of solutions here are those which I would like to review or some which are really good problems.
-
-### Points to keep in mind always
+### Mind.push_back(points)
 - Constantly, push throughout your comfort zone. It's recursive.
 - Read the problem statement and constraints carefully. 
 - Don't panic, giveup, rush.
 - Work on a paper. Thinking is better on paper.
 - No need to stress. Play.
 
-## Reflection
+## if(done) Reflection()
 Emphasis should be on the thinking process.
+
+:what small changes can I make in order to improve my speed/logic or efficiency in general?
+
 - **Focus on thinking for more time**. Try to code after you are clear with the algorithm/logic
   Debug it if you think it's correct or if it is passing some later
 test cases. Don't change approach abruptly.
@@ -21,7 +29,7 @@ test cases. Don't change approach abruptly.
 - Deep breaths or small breaks (1 - 2 minutes) can help.
 
 
-## Common Mistakes (2020)
+## try {} catch {Common Mistakes}
 -  Being lazy and not thinking properly. Not working on pen/paper
 -  Mapping out previous problems to new problems. Solution: think from 1st principles
 - Panicking
@@ -29,13 +37,13 @@ test cases. Don't change approach abruptly.
 - Do not get disheartened by failures/not being able to solve. Analyse your mistakes and move forward
 - Don't run away from stuff you don't like/ basic difficult stuff. You will have to cover them sometime. 
 
-## Resources
+## BFS(Resources)
 
 [Youtube Channels for CP and CI](YoutubeChannels.md)
 ### A small post/article
 [Meta Coding Interview Style Problem Guide](https://docs.google.com/document/d/1Cl0PZh6MQcb9XgcmiBkUXcoY7ahi7hO5sSRqwfU16Mc/edit#) - I had written this for a friend. Might help you also.
 
-### Bookmarks 
+### Ignore Bookmarks 
 1. https://happygirlzt.com/codelist.html
 2. https://kennyzhuang.gitbooks.io/algorithms-collection/content/burst_balloons.html
 3. http://adilet.org/
