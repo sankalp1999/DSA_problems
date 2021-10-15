@@ -1,11 +1,11 @@
 # Problem-solving()
+
 This repository contains solutions of some of the problems I have solved on different platforms across the Internet.
 
+- All problems in [Problem_Tree](https://github.com/sankalp1999/DSA_problems/blob/master/Problem_Tree.txt)
 - SDE sheet solutions = Latest -> sde_sheet_revision_probs
 - Graph algorithms = Latest -> Graph
 - DisjointSet = Latest -> CF or DisjointSet folder
-- All problems in Problem_Tree.txt
-
 
 Check out my [Approach to CP in a nutshell](https://github.com/sankalp1999/3rdSem-Data-Structures-Lab#some-thoughts---cp-related) if you have interest in Competitive programming.
 
