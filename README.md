@@ -4,17 +4,12 @@ Check out my [Approach to CP in a nutshell](https://github.com/sankalp1999/3rdSe
 
 A lot of solutions here are those which I would like to review or some which are really good problems.
 
-Things to check out/in progress
-- https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
-
-
 ### Points to keep in mind always
 - Constantly, push throughout your comfort zone. It's recursive.
 - Read the problem statement and constraints carefully. 
 - Don't panic, giveup, rush.
 - Work on a paper. Thinking is better on paper.
 - No need to stress. Play.
-
 
 ## Reflection
 Emphasis should be on the thinking process.
@@ -26,12 +21,9 @@ test cases. Don't change approach abruptly.
 - Deep breaths or small breaks (1 - 2 minutes) can help.
 
 
-## Online Tests for internship (Not placement)
-This is all luck or I am dumb or maybe just others are better than me(pressure handling, thinking, previous efforts, smartness) who cleared. Anyways, i will keep doing problems as I enjoy solving.
 
-Anyways, Competitive programming helps here. People recommend solving CF problems.
 
-## Mistakes
+## Mistakes (2020)
 - Many a times problems have simple solution which does not involve DP, recursion etc. Implementation and greedy are the way to go for this practice.
 - Not reading full question or constraints
 - Panicking
@@ -45,8 +37,6 @@ I had written this long post somewhere else but this is a better place.
 All the good YouTube channels for Competitive Programming(not coding interview) I know are-
 
 [Youtube Channels for CP and CI](YoutubeChannels.md)
-
-
 
 ## A small post/article
 [Meta Coding Interview Style Problem Guide](https://docs.google.com/document/d/1Cl0PZh6MQcb9XgcmiBkUXcoY7ahi7hO5sSRqwfU16Mc/edit#) - I had written this for a friend. Might help you also.
