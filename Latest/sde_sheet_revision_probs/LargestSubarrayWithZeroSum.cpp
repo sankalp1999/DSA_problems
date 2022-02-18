@@ -1,3 +1,32 @@
+// Updated 2022
+
+int maxLen(vector<int>&A, int n)
+    {   
+        unordered_map<int,int> mapper;
+        int sum = 0;
+        int max_len = 0;
+        for(int i = 0; i < n; i++)
+        {
+            sum += A[i];
+            
+            if(sum == 0)
+            {
+                max_len = max(max_len, i + 1);
+                // Should have thought of i + 1 man
+            }
+            
+            if(mapper.find(sum) != mapper.end())
+            {
+                max_len = max(max_len, i - mapper[sum]);
+            }
+            else
+            mapper[sum] = i; // only first occurence of that sum
+            // to optimize the largest subarray
+        }
+        return max_len;
+}
+
+
 int maxLen(int A[], int n)
 {
     // Your code here
